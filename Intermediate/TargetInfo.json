@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "cppTest13",
+			"Path": "C:\\Users\\user\\Documents\\Unreal Projects\\cppTest13\\Source\\cppTest13.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "cppTest13Editor",
+			"Path": "C:\\Users\\user\\Documents\\Unreal Projects\\cppTest13\\Source\\cppTest13Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
