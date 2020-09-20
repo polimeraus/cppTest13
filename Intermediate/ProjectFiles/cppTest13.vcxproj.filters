@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\cppTest13.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1D44DF84-104C-453D-A64E-681EA536717C}</UniqueIdentifier>
+      <UniqueIdentifier>{AFA5031B-7441-4DC4-8DFD-653014450E7A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\cppTest13.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\cppTest13Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{2D34B671-2DB4-45CE-BA8C-45A6742E0426}</UniqueIdentifier>
+      <UniqueIdentifier>{E30CD82A-5E69-4490-BA98-3E9BD40F898C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +32,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\cppTest13">
-      <UniqueIdentifier>{CDD87E48-76A5-42D6-9E11-A023484B862F}</UniqueIdentifier>
+      <UniqueIdentifier>{DB6700BF-4341-45B1-8022-4590D75DD126}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\cppTest13\coloredCube.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\coloredCube.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
     <None Include="..\..\Source\cppTest13\cppTest13.Build.cs">
       <Filter>Source\cppTest13</Filter>
     </None>
@@ -53,10 +61,46 @@
     <ClInclude Include="..\..\Source\cppTest13\cppTest13GameMode.h">
       <Filter>Source\cppTest13</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\hidingActor.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\hidingActor.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\cppTest13\meshActor.cpp">
       <Filter>Source\cppTest13</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\cppTest13\meshActor.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\meshsizActor.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\meshsizActor.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\MyActorDelete.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\MyActorDelete.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\NumberOfPaown.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\NumberOfPaown.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\RotatingActor.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\RotatingActor.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\SweepTraceActor.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\SweepTraceActor.h">
       <Filter>Source\cppTest13</Filter>
     </ClInclude>
   </ItemGroup>

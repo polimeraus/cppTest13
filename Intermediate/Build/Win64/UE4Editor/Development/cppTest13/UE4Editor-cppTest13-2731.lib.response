@@ -1,0 +1,24 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-cppTest13-2731.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\cppTest13Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\cppTest13.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\cppTest13Character.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\cppTest13GameMode.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\meshActor.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\meshsizActor.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\MyActorDelete.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\cppTest13.init.gen.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\cppTest13Character.gen.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\cppTest13GameMode.gen.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\meshActor.gen.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\meshsizActor.gen.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\MyActorDelete.gen.cpp.obj"
+"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\Default.rc2.res"
+/OUT:"C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Development\cppTest13\UE4Editor-cppTest13-2731.lib"
+/INCLUDE:IMPLEMENT_MODULE_cppTest13

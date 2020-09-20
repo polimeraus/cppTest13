@@ -20,9 +20,11 @@ AmeshActor::AmeshActor()
 	if (evAsset.Succeeded())
 	{
 		mesh->SetStaticMesh(evAsset.Object);
+		mesh->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
+		mesh->SetWorldScale3D(FVector(2.f,2.f,2.f));
 	}
 
-	mesh->SetMaterial()
+	//mesh->SetMaterial()
 
 }
 
