@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\cppTest13.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{AFA5031B-7441-4DC4-8DFD-653014450E7A}</UniqueIdentifier>
+      <UniqueIdentifier>{05F496E0-04F6-430D-BCF6-6452DA33F02D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\cppTest13.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{E30CD82A-5E69-4490-BA98-3E9BD40F898C}</UniqueIdentifier>
+      <UniqueIdentifier>{525239C9-98DF-45A7-9AC7-F399118D34BB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,12 +32,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\cppTest13">
-      <UniqueIdentifier>{DB6700BF-4341-45B1-8022-4590D75DD126}</UniqueIdentifier>
+      <UniqueIdentifier>{C334016B-D0D1-40DF-900A-BD719237201B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\cppTest13\coloredCube.cpp">
       <Filter>Source\cppTest13</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\cppTest13\coloredCube.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\componentHit.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\componentHit.h">
       <Filter>Source\cppTest13</Filter>
     </ClInclude>
     <None Include="..\..\Source\cppTest13\cppTest13.Build.cs">
@@ -97,10 +103,22 @@
     <ClInclude Include="..\..\Source\cppTest13\RotatingActor.h">
       <Filter>Source\cppTest13</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\setActorLocationRotation.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\setActorLocationRotation.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\cppTest13\SweepTraceActor.cpp">
       <Filter>Source\cppTest13</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\cppTest13\SweepTraceActor.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\TimerActor.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\TimerActor.h">
       <Filter>Source\cppTest13</Filter>
     </ClInclude>
   </ItemGroup>
