@@ -1,0 +1,8 @@
+C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\DebugGame\cppTest13\Definitions.cppTest13.h
+C:\Users\user\Documents\Unreal Projects\cppTest13\Source\cppTest13\MyTriggerBox.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/TriggerBox.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/TriggerBase.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TriggerBase.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TriggerBox.generated.h
+C:\Users\user\Documents\Unreal Projects\cppTest13\Intermediate\Build\Win64\UE4Editor\Inc\cppTest13\MyTriggerBox.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
