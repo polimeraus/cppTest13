@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\cppTest13.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{BA3E7DD7-D8B3-4FBB-A51F-80F88AC20981}</UniqueIdentifier>
+      <UniqueIdentifier>{EC722538-D361-4785-A7F0-BD48A8B1A348}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\cppTest13.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{3CBA44C0-AF16-4608-B149-7CFEAD4CBB25}</UniqueIdentifier>
+      <UniqueIdentifier>{0EF446D6-E891-40F1-8DF6-4FE5A5558ACB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\cppTest13">
-      <UniqueIdentifier>{5F53EE7E-A74F-4E03-8CF3-6496611EAD0D}</UniqueIdentifier>
+      <UniqueIdentifier>{D8AE8994-743B-4B4F-B2BB-2016D5565D82}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\cppTest13\coloredCube.cpp">
       <Filter>Source\cppTest13</Filter>
@@ -71,6 +71,12 @@
       <Filter>Source\cppTest13</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\cppTest13\hidingActor.h">
+      <Filter>Source\cppTest13</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\cppTest13\LightSwitchTrigger.cpp">
+      <Filter>Source\cppTest13</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\cppTest13\LightSwitchTrigger.h">
       <Filter>Source\cppTest13</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\cppTest13\meshActor.cpp">
