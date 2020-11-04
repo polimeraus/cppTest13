@@ -8,14 +8,29 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include <cppTest13\LightSwitchButton.h>
 
 //////////////////////////////////////////////////////////////////////////
 // AcppTest13Character
 
 AcppTest13Character::AcppTest13Character()
 {
+	//gokhan
+	TriggerCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("trigger kapsul"));
+	TriggerCapsule->InitCapsuleSize(60.f,100.f);
+	TriggerCapsule->SetCollisionProfileName(TEXT("Trigger"));
+	TriggerCapsule->SetGenerateOverlapEvents(true);
+	TriggerCapsule->SetupAttachment(RootComponent);
+	TriggerCapsule->OnComponentBeginOverlap.AddDynamic(this, &AcppTest13Character::TriggerCapsueOVerlapBegin);
+	TriggerCapsule->OnComponentEndOverlap.AddDynamic(this, &AcppTest13Character::TriggerCapsueOVerlapEnd);
+
+	CurrentLightSwitch = nullptr;
+	//
+
+
+
 	// Set size for collision capsule
-	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
+	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
 
 	// set our turn rates for input
 	BaseTurnRate = 45.f;
@@ -54,6 +69,9 @@ void AcppTest13Character::SetupPlayerInputComponent(class UInputComponent* Playe
 {
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
+
+	PlayerInputComponent->BindAction("Action", IE_Pressed, this, &AcppTest13Character::OnAction);
+
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
@@ -76,6 +94,42 @@ void AcppTest13Character::SetupPlayerInputComponent(class UInputComponent* Playe
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AcppTest13Character::OnResetVR);
 }
 
+
+void AcppTest13Character::TriggerCapsueOVerlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Blue, FString::Printf(TEXT("overlappppp")));
+
+	if (OtherActor->GetClass() == ALightSwitchButton::StaticClass())
+	{
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Green, FString::Printf(TEXT("dorgudur...")));			
+		else
+			GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Red, FString::Printf(TEXT("Deeeeeldir...")));
+	}
+
+
+	if ((OverlappedComp != nullptr) && (OtherActor != nullptr) && (OtherActor != this) && (OtherActor->GetClass()->IsChildOf(ALightSwitchButton::StaticClass())) )
+	{
+		CurrentLightSwitch = Cast<ALightSwitchButton>(OtherActor);
+	}
+}
+
+
+void AcppTest13Character::OnAction()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Yellow, FString::Printf(TEXT("Action: F ye basildi..")));
+	
+	if (CurrentLightSwitch)
+	{
+
+		CurrentLightSwitch->ToggleLight();
+	}
+		
+}
+
+void AcppTest13Character::TriggerCapsueOVerlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+}
 
 void AcppTest13Character::OnResetVR()
 {

@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+//#include "Components/CapsuleComponent.h"
+#include <cppTest13\LightSwitchButton.h>
 #include "cppTest13Character.generated.h"
 
 UCLASS(config=Game)
@@ -28,6 +30,28 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
+
+	
+	//gokhan
+	UPROPERTY(VisibleAnywhere, Category="Trigger Capsule")
+	UCapsuleComponent* TriggerCapsule;
+
+	UPROPERTY()
+	ALightSwitchButton* CurrentLightSwitch;
+
+	//gokhan
+	UFUNCTION()
+	void OnAction();
+
+	//gokhan
+	UFUNCTION()
+	void TriggerCapsueOVerlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	//gokhan
+	UFUNCTION()
+	void TriggerCapsueOVerlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+
 
 protected:
 

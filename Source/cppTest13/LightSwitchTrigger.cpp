@@ -24,6 +24,7 @@ ALightSwitchTrigger::ALightSwitchTrigger()
 
 	triggerSphere = CreateDefaultSubobject<USphereComponent>(TEXT("trigger sphere"));
 	triggerSphere->SetSphereRadius(triggerSphereRadius, true);
+	triggerSphere->SetCollisionProfileName(TEXT("Trigger"));
 	triggerSphere->OnComponentBeginOverlap.AddDynamic(this, &ALightSwitchTrigger::sphereComponentBeginOverlap);
 	triggerSphere->OnComponentEndOverlap.AddDynamic(this, &ALightSwitchTrigger::sphereComponentEndOverlap);
 	triggerSphere->SetupAttachment(RootComponent);

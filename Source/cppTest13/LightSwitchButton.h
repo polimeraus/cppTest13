@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/PointLightComponent.h"
+#include "Components/SphereComponent.h"
 #include "LightSwitchButton.generated.h"
 
 UCLASS()
@@ -22,5 +24,18 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+
+	UPROPERTY(VisibleAnywhere, Category = "Light Switch")
+	UPointLightComponent* PointLight;
+
+	UPROPERTY(VisibleAnywhere, Category = "Light Switch")
+	USphereComponent* LightSphere;
+
+	UPROPERTY(EditAnywhere, Category = "Light Switch")
+	float LightIntensity = 20000.f;
+
+	UFUNCTION(BlueprintCallable, Category = "Light Switch")
+	void ToggleLight();
 
 };

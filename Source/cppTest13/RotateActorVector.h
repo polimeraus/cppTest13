@@ -10,6 +10,12 @@ UCLASS()
 class CPPTEST13_API ARotateActorVector : public AActor
 {
 	GENERATED_BODY()
+
+
+
+	UPROPERTY()
+	float Angle;
+
 	
 public:	
 	// Sets default values for this actor's properties
@@ -22,5 +28,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+
 
 };
