@@ -19,7 +19,7 @@ AcppTest13Character::AcppTest13Character()
 	TriggerCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("trigger kapsul"));
 	TriggerCapsule->InitCapsuleSize(60.f,100.f);
 	TriggerCapsule->SetCollisionProfileName(TEXT("Trigger"));
-	TriggerCapsule->SetGenerateOverlapEvents(true);
+	//TriggerCapsule->SetGenerateOverlapEvents(true);
 	TriggerCapsule->SetupAttachment(RootComponent);
 	TriggerCapsule->OnComponentBeginOverlap.AddDynamic(this, &AcppTest13Character::TriggerCapsueOVerlapBegin);
 	TriggerCapsule->OnComponentEndOverlap.AddDynamic(this, &AcppTest13Character::TriggerCapsueOVerlapEnd);
