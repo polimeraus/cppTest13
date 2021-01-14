@@ -6,12 +6,21 @@
 #include "Components/MeshComponent.h"
 #include "MyMeshComponent.generated.h"
 
-/**
- * 
- */
-UCLASS()
+
+UCLASS(ClassGroup = Experimental, meta = (BlueprintSpawnableComponent))
 class CPPTEST13_API UMyMeshComponent : public UMeshComponent
 {
 	GENERATED_BODY()
+
+public:
+	virtual FPrimitiveSceneProxy* CreateSceneProxy() override;
+
+	TArray<int32> Indices;
+	TArray<FVector> Vertices;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Materials)
+	UMaterial* TheMaterial;
+
+	UMyMeshComponent();
 	
 };
